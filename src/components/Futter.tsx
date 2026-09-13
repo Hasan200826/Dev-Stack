@@ -1,4 +1,4 @@
-import React from 'react'
+
 import FutterInfo from './FutterInfo'
 
 const Futter = () => {

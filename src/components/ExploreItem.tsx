@@ -1,15 +1,18 @@
-import React, { useState } from 'react'
+
+
+import { useState } from 'react'
 import ItemLeft from './ItemLeft'
 import ItemRight from './ItemRight'
+import type { stackItemType,} from './stackItemType'
 
 
 interface ExploreItemprops{
-  ExplorePromis:promises<string[]>
+  ExplorePromis:Promise<stackItemType[]>
 }
 
 const ExploreItem = ({ExplorePromis}:ExploreItemprops) => {
   
-  const [stackArr, setstackArr] = useState<string[]>([])
+  const [stackArr, setstackArr] = useState<stackItemType[]>([])
   console.log(stackArr)
   return (
     <div className=' grid grid-cols-4 gap-5'>

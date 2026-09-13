@@ -1,4 +1,4 @@
-import React from 'react'
+
 import HomeLeft from './HomeLeft'
 import HommeRight from './HommeRight'
 

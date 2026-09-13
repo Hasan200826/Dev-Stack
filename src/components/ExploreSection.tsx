@@ -1,10 +1,10 @@
-import React from 'react'
+
 import ExploreHeading from './ExploreHeading'
 import ExploreItem from './ExploreItem'
-import type { promises } from 'dns'
+import type { stackItemType } from './stackItemType'
 
 interface Exploreprop{
-   ExplorePromis:promises<string[]>
+   ExplorePromis:Promise<stackItemType[]>
 }
 
 const ExploreSection = ({ExplorePromis}:Exploreprop) => {

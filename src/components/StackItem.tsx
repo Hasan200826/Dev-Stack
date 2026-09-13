@@ -1,16 +1,19 @@
 import React from 'react'
 import { IoMdClose } from 'react-icons/io'
 import { Bounce, toast } from 'react-toastify'
+import type { stackItemType } from './stackItemType'
 
 
 interface StackItempromp {
-  stackItem:string[]
-  setstackArr: React.Dispatch<React.SetStateAction<string[]>>
+  stackItem: stackItemType
+  stackArr:stackItemType[]
+  
+  setstackArr: React.Dispatch<React.SetStateAction<stackItemType[]>>
 }
 
 const StackItem = ({stackItem,stackArr,setstackArr}:StackItempromp) => {
-  function heandlCloseBtn (id) {
-    setstackArr(stackArr.filter((item)=>item.id !==id ))
+  function heandlCloseBtn (id:string) {
+    setstackArr(stackArr.filter((item)=>item.id !==id))
     toast.success(`${stackItem.name} removed from stack`, {
       position: "bottom-right",
       autoClose: 2000,

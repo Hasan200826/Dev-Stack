@@ -1,9 +1,12 @@
 import React from 'react'
 import StackItem from './StackItem'
+import type { stackItemType } from './stackItemType'
+
 
 interface ItemRightItemBoxprops{
-  stackArr:string[]
-  setstackArr: React.Dispatch<React.SetStateAction<string[]>>
+  stackArr:stackItemType[]
+  setstackArr: React.Dispatch<React.SetStateAction<stackItemType[]>>
+  
 }
 
 

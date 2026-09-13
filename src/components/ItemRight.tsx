@@ -1,12 +1,13 @@
 import React from 'react'
 import ItemRightHeading from './ItemRightHeading'
 import ItemRightItemBox from './ItemRightItemBox'
+import type { stackItemType } from './stackItemType'
 interface ItemRightprops{
-  stackArr:string[]
-  setstackArr: React.Dispatch<React.SetStateAction<string[]>>
+  stackArr:stackItemType[]
+  setstackArr: React.Dispatch<React.SetStateAction<stackItemType[]>>
 }
 
-const ItemRight = ({stackArr, setstackArr}) => {
+const ItemRight = ({stackArr, setstackArr}:ItemRightprops) => {
   function removeAllItems (){
     setstackArr([])
   }

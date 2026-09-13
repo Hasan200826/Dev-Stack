@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
 import { Bounce, toast } from 'react-toastify';
+import type { stackItemType } from './stackItemType';
 
-interface ItemCardpromp{
- exploreItem:string[],
- stackArr:string[],
-  setstackArr: React.Dispatch<React.SetStateAction<string[]>>
 
+interface  ItemCardpromp{
+  kye:string
+  exploreItem: stackItemType 
+  stackArr: stackItemType[]
+  setstackArr: React.Dispatch<
+    React.SetStateAction<stackItemType[]>
+  >
 }
 
-const ItemCard = ({exploreItem,stackArr,setstackArr}:ItemCardpromp[]) => {
+const ItemCard = ({exploreItem,stackArr,setstackArr}:ItemCardpromp) => {
 
   const [isClick,setIsclick]=useState(false)
   

@@ -1,7 +1,8 @@
-import React from 'react'
+import type { stackItemType } from "./stackItemType"
+
 
 interface ItemRightHeadingprops{
-  stackArr:string[]
+  stackArr:stackItemType[]
 }
 
 
