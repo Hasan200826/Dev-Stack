@@ -14,7 +14,6 @@ interface ItemLeftprops{
 
 const ItemLeft = ({ExplorePromis,stackArr,setstackArr}:ItemLeftprops) => {
   const exploreItems:stackItemType[]= use(ExplorePromis)
-   console.log(exploreItems);
    
   return (
     <div className=' col-span-3 grid grid-cols-3 gap-3'>

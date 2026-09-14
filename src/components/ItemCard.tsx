@@ -12,9 +12,10 @@ interface  ItemCardpromp{
   >
 }
 
-const ItemCard = ({exploreItem,stackArr,setstackArr}:ItemCardpromp) => {
+const ItemCard = ({kye,exploreItem,stackArr,setstackArr}:ItemCardpromp) => {
 
   const [isClick,setIsclick]=useState(false)
+  console.log(kye)
   
   function handleClick (){
     setIsclick(true)

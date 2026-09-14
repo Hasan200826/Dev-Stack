@@ -9,7 +9,7 @@ import Futter from './components/Futter'
 import type { stackItemType } from './components/stackItemType'
 
 const ExplorePromis = async ():Promise<stackItemType[]> =>{
-   const res = await fetch('../public/items.json');
+   const res = await fetch('/items.json');
    const data = await res.json()
    return data
 }
